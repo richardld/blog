@@ -1,0 +1,69 @@
+.text-editor {
+  margin: 20px;
+}
+
+.post-title {
+  border:none;
+  border-bottom: 0px solid;
+  font-size: 30px;
+  width: 50%;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.post-title:focus{
+    outline: none;
+}
+
+.post-author {
+  border:none;
+  border-bottom: 0px solid;
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 50%;
+  display: block;
+  color: grey;
+}
+
+.post-author:focus{
+    outline: none;
+}
+
+.button-div {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+
+.button-yellow {
+  background-color: #FDB515;
+  font-size: 16px;
+  color: #303030;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 5px;
+  border-width: 0px;
+  margin-left: 15px;
+  cursor: pointer;
+  display: inline;
+}
+
+.button-grey {
+  background-color: lightgrey;
+  font-size: 16px;
+  color: #303030;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 5px;
+  border-width: 0px;
+  margin-left: 15px;
+  cursor: pointer;
+  display: inline;
+}

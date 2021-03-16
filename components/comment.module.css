@@ -1,0 +1,29 @@
+
+.comment-div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.comment-author {
+  margin-right: auto;
+  margin-bottom: 0px;
+  color: grey;
+}
+
+.comment-date {
+  margin-left: auto;
+  color: grey;
+  margin-bottom: 0px;
+}
+
+.comment-details {
+  display: flex;
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+
+.comment-text {
+  margin-top: 5px;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
