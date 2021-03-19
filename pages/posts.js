@@ -20,7 +20,6 @@ export default function Home() {
         <div>
           <PostPage id={id}/>
         </div>
-        <Footer/>
       </main>
     </div>
   )

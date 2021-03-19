@@ -4,6 +4,7 @@
   margin: auto;
   align-items: center;
   max-width: 700px;
+  min-height: calc(100vh - 75px - 60px);
 }
 
 .button-div {

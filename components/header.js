@@ -10,7 +10,7 @@ export default function Header({}) {
         <Link href="/about"><a className={styles['header-link']}>About</a></Link>
         <Link href="/about"><a className={styles['header-link']}>Contact</a></Link>
         <Link href="/about"><a className={styles['header-link']}>Link</a></Link>
-        <Link href="/edit"><button className={styles['header-button']}>Write!</button></Link>
+        <Link href="/edit"><button className={styles['header-button']}>Post!</button></Link>
       </div>
     </div>);
 }

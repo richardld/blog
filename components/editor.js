@@ -6,6 +6,7 @@ import Modal from '@material-ui/core/Modal';
 import Button from '@material-ui/core/Button';
 import '../node_modules/react-quill/dist/quill.snow.css';
 import styles from './editor.module.css'
+import Router from 'next/router'
 
 import {
   FirebaseDatabaseProvider,
@@ -28,7 +29,8 @@ const config = {
 class Editor extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { editorHtml: '' };
+        this.state = { editorHtml: '',
+                        title: ""};
         this.handleChange = this.handleChange.bind(this);
     }
 
@@ -129,14 +131,14 @@ class Editor extends React.Component {
                 <div className={styles['button-div']}>
                   <div className={styles['button-div-horizontal']}>
                     <FirebaseDatabaseProvider firebase={firebase} {...config}>
-                      <FirebaseDatabaseMutation type="update" path={path + '/' + this.state.title + " " + (new Date()).getTime() % 100 }>
+                      <FirebaseDatabaseMutation type="update" path={path + '/' + this.state.title.replace(/\W/g, '') + "" + (new Date()).getTime() % 100 }>
                         {({ runMutation }) => {
                           return (
                             <div>
                               <button className={styles['button-grey']}>Preview</button>
                               <button className={styles['button-yellow']} data-testid="update"
                               onClick={async () => {
-                                if (this.state.title && this.state.author && this.toHTML()) {
+                                if (this.state.title.trim() && this.state.author.trim() && this.toHTML()) {
                                   const { key } = await runMutation({ 
                                     title: this.state.title,
                                     author: this.state.author,
@@ -146,6 +148,7 @@ class Editor extends React.Component {
                                     text: this.toHTML(),
                                     comments: "none"
                                   });
+                                  Router.push('/');
                                 }
                               }}>Publish!</button>
                             </div>

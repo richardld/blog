@@ -2240,6 +2240,16 @@ jest-worker@24.9.0:
     merge-stream "^2.0.0"
     supports-color "^6.1.0"
 
+jquery-migrate@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/jquery-migrate/-/jquery-migrate-3.3.2.tgz#7829ee24de3054d0d2f42dd093390d8a7b7af01a"
+  integrity sha512-L3gYhr7yEtLUSAeqXSicVa0vRD4aGwjw/bWY8YzrO2o/qDY1BaMyP3oB3bZf5Auy3Hu9ynliio0CTyDWCBPVDw==
+
+jquery@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
+  integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
+
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"

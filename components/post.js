@@ -7,7 +7,7 @@ export default function Post(props) {
   var data = props.data;
   return (
       <div className={styles.['post-div']}>
-        <Link href={{pathname: "/posts", query: {id: props.id}}}><a className={styles.link}><h1>{data['title']}</h1></a></Link>
+        <Link href={{pathname: "/posts", query: {id: props.id}}}><a className={styles.link}><p className={styles['post-div-h1']}>{data['title']}</p></a></Link>
         <div className={styles.['post-div-details']}>
           <p className={styles.['post-div-author']}>{data['author']}</p>
           <p className={styles.['post-div-date']}>{data['date']}</p>

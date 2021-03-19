@@ -29,8 +29,9 @@ export default function PostPage(id) {
   const urlParams = useRouter().asPath;
   var id = urlParams.substring(10);
   for (var i = 0; i < 30; i++) {
-    id = id.replace("+", " ");
+    id = decodeURIComponent((id + '').replace(/\+/g, '%20'));
   }
+  console.log(id);
   return (
     <div className={styles.['front-div']}>
       <FirebaseDatabaseProvider firebase={firebase} {...config}>
@@ -43,7 +44,7 @@ export default function PostPage(id) {
                 return(
                 <div>
                   <div className={styles.['post-div']}>
-                    <Link href={urlParams}><a className={styles.link}><h1>{data['title']}</h1></a></Link>
+                    <Link href={urlParams}><a className={styles.link}><p className={styles['post-div-h1']}>{data['title']}</p></a></Link>
                     <div className={styles.['post-div-details']}>
                       <p className={styles.['post-div-author']}>{data['author']}</p>
                       <p className={styles.['post-div-date']}>{data['date']}</p>

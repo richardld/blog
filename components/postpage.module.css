@@ -6,15 +6,17 @@
   margin-top: 10px;
   margin-bottom: 10px;
   min-height: 75vh;
-  max-width: 90%;
+  max-width: 85%;
 }
 
-.post-div h1 {
+.post-div-h1 {
   margin-top: 0px;
   margin-bottom: 5px;
   text-align: left;
-  font-size: 30px;
+  font-size: 35px;
+  font-weight: bold;
 }
+
 
 .post-div-details {
   display: flex;
@@ -110,7 +112,7 @@
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  max-width: 90%;
+  max-width: 85%;
 }
 
 .comments-div-title {

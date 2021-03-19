@@ -6,7 +6,9 @@
   font-size: 12px;
   background-color: rgb(50, 50, 50);
   color: rgb(100, 100, 100);
-  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  margin-top: 10px;
 }
 
 .links {
